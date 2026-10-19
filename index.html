@@ -180,7 +180,7 @@ const store = {
   set(k, v) { try { localStorage.setItem(this.P + k, JSON.stringify(v)); } catch (e) {} }
 };
 // ⚠️ رابط مشروع Apps Script «مديرو المعلمات» (ينتهي بـ /exec)
-const API = 'ضع_رابط_exec_هنا';
+const API = 'https://script.google.com/macros/s/AKfycby8L5UKWX7fhW8wY4FtTeFk9lKVogaJC7RiTQHEyVcE4LlDqda8GVha0ZniV4mtY44jNA/exec';
 // إرسال طلب إلى Apps Script — نص عادي حتى لا يرفضه المتصفح (CORS)
 async function api(action, extra) {
   const ctl = new AbortController(); const t = setTimeout(() => ctl.abort(), 30000);
